@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortest Path Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Shortest Path Finder in มศว องครักษ์</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <h2>Find the Shortest Path by using dijkstra's algorithm</h2>
+      <form id="path-form">
+        <label for="start-node">Start Node:</label>
+        <input type="text" id="start-node" name="start-node" placeholder="Enter start node (e.g., A)" required>
+        
+        <label for="end-node">End Node:</label>
+        <input type="text" id="end-node" name="end-node" placeholder="Enter end node (e.g., D)" required>
+        
+        <button type="submit">Find Path</button>
+      </form>
+    </section>
+
+    <section id="result-section">
+      <h2>Result</h2>
+      <div id="result">
+        <!-- ผลลัพธ์จะปรากฏที่นี่ -->
+      </div>
+    </section>
+
+    <section id="map-section">
+      <h2>Map</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Shortest Path Finder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
